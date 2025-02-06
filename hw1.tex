@@ -113,15 +113,17 @@ Output the active vertices as a quasi-kernel\;
 
 Prove the correctness of \Cref{alg:qk}, and write down its running time (assuming a good implementation).
 
-\paragraph{\textcolor{brown}{Solution.}}
-\textbf{Description of the Algorithm}\\
+\paragraph{\textcolor{brown}{Solution.}} \:
+
+\textbf{Description of the Algorithm} \\
 The first loop of the algorithm goes through all the vertices in the graph and deactivates all the vertices that are outgoing from the current vertex if they have a higher index. The second loop goes through all the vertices in the graph in reverse order and deactivates all the vertices that are outgoing from the current vertex if they have a lower index. The vertices that are not deactivated are output as the quasi-kernel.\\
 To prove this algorithm, we need to show that for any $v \in V \setminus Q$, there exists a vertex $u \in Q$ such that there is a simple path of length at most $2$ from $u$ to $v$.\\
+\\ \textbf{Proof of the Algorithm}\\
 Let $v \in V \setminus Q$. Thus $v$ must have been either deactivated in the first or the second loop.\\
 If $v$ was deactivated in the first loop, then there exists a vertex $w$ with index lower then $v$'s index with an edge from $u$ to $v$. \\
 If $w$ is still active at then end of the algorithm, then $w$ is an element of the output of the algorithm. There is a path of length 1 from $w \to v$, since $w$ deactivated $v$. \\
 If $w$ is later deactivated in the second loop, it would have been due to another active vertex with a higher index, which we call $x$. Since we reached $x$ in the second loop, it is impossible to deactivate it, as the loop will proceed down the indices past $x$, and a lower-index vertex cannot deactivate a higher-index vertex in the second loop. Therefore we have a path of length 2 from $x \to w \to v$. \\
 If $v$ was deactivated in the second loop then there exist a vertex $w$ with index higher then $v$'s index with an edge from $u$ to $v$. Again, $w$ cannot be deactivated if it was reached in the second loop, so there is a path of length 1 from $w$ to $v$ \\
 From these cases, we have concluded that the maximum path length from a member of the output of the algorithm to a vertex $v \in V \setminus Q$ is 2, so the output is a quasi-kernel.
-\textbf{Running Time}\\
+\\ \\ \textbf{Running Time}\\
 There are two loops in this algorithm. The first loop goes through all the vertices and for each vertex that is still active, it goes through all the edges. The second loop goes through all the vertices and for each vertex that is still active, it goes through all the edges. The worst-case is that all vertices and edges have to be considered; improvements can be made since the presence of edges will turn off some vertices, but this correction would be some coefficient on the two terms, or constant, so it does not matter in big O. Besides, optimizing how edges turn off vertices would no longer be worst case. Thus the running time of this algorithm is $O(V+E)$ where $V$ is the number of vertices and $E$ is the number of edges.\\
