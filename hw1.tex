@@ -1,0 +1,127 @@
+\paragraph{\textcolor{red}{Acknowledgment (remember to edit this).}} Our team members are \textbf{Isaac Newton (in123)}, \textbf{Albert Einstein (ae123)}, and \textbf{Alan Turing (at123)}. We searched for Problem 17 on the Internet after spending 123 hours on it, and we asked ChatGPT how to solve Problem 32(c) after spending 123 days on it. We did not successfully solve Problem 49 despite having spent 123 years on it. \textbf{We affirm that we have acknowledged every external help during the preparation of this document.}
+
+\section*{Assumptions for Problems 1 and 2}
+In Problem 1, all named functions are strictly positive. In Problems 1 and 2, the limits in the notations $O, o, \Omega, \omega, \Theta$ are always $n \to +\infty$.
+
+\section*{Problem 1}
+Is each of the following statements true or false? Give proofs for your answers.
+\begin{enumerate}
+    \item If $f(n) \in O\big(g(n)\big)$, then $\log_2 (10 + f(n)) \in O\big(\log_2 (10 + g(n))\big)$.
+    \item If $f(n) \in O\big(g(n)\big)$, then $2^{f(n)} \in O\big(2^{g(n)}\big)$.
+    \item If $f(n) \in o\big(g(n)\big)$, then $2^{f(n)} \in o\big(2^{g(n)}\big)$.
+    \item If $f_1(n) \in O\big(g_1(n)\big)$ and $f_2(n) \in O\big(g_2(n)\big)$, then $f_1(n) + f_2(n) \in O\big(g_1(n) + g_2(n)\big)$.
+    \item We know that $f_i(n) \in O\big(g_i(n)\big)$ for every $i \in \mathbb{Z}^+$. Define the functions $F, G$ as $F(k) = \sum_{i = 1}^k f_i(i)$ and $G(k) = \sum_{i = 1}^k g_i(i)$ for every $k \in \mathbb{Z}^+$. Then $F(n) \in O\big(G(n)\big)$.
+    \item It is possible that $f(n) \in \omega\big(g(n)\big)$ and $g(n) \in \Omega\big(f(n)\big)$.
+    \item It is possible that $f(n) \in \Theta\big(g(n)\big)$ and $g(n) \notin \Theta\big(f(n)\big)$.
+\end{enumerate}
+
+\paragraph{\textcolor{brown}{Solution.}}
+\begin{enumerate}
+    \item Here is my solution.
+    \item 
+    \item 
+    \item 
+    \item
+    \item 
+    \item 
+\end{enumerate}
+
+\section*{Problem 2}
+Evaluate and simplify each of the following functions of $n$ using the $\Theta$ notation. For example, $2n^2 + 1$ should be simplified into $\Theta(n^2)$. Clearly explain each of your answers.
+\begin{enumerate}
+    \item $3^{3n} + 344^n + n^{344}$.
+    \item $2^{n} + 6^{\sqrt{n}}$.
+    \item $4n + n \ln \sqrt{n}$.
+    \item $\sum_{k = 1}^{n} k^2$.
+    \item $\sum_{k = 1}^{n} k \ln^2 k$.
+    \item $\sum_{k = 1}^{n} 4^k$.
+    \item $\sum_{k = 1}^{n} e^{\sqrt{k}}$.
+    \item $\sum_{k = 1}^{n} (\sin k)^8$.
+\end{enumerate}
+
+\paragraph{\textcolor{brown}{Solution.}}
+\begin{enumerate}
+    \item Here is my solution.
+    \item 
+    \item 
+    \item 
+    \item
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+
+\section*{Problem 3}
+In the stable matching problem, is it possible that there are $10!$ different stable matchings in an instance with $10$ vertices on each side? Give a proof for your answer. (Note that we assume strict preferences, that is, no vertex is indifferent between two vertices on the other side.)
+
+\paragraph{\textcolor{brown}{Solution.}}
+Here is my solution.
+
+\section*{Problem 4}
+We have an $n \times n$ matrix $A$. The entries in the matrix are distinct real numbers. Our goal is to select $n$ entries so that
+\begin{itemize}
+    \item exactly one entry is selected in each row,
+    \item exactly one entry is selected in each column, and
+    \item any unselected entry in the matrix is either smaller than the selected entry in the same row or larger than the selected entry in the same column.
+\end{itemize}
+Prove that this is always possible by reducing our problem to the stable matching problem.
+
+\paragraph{\textcolor{brown}{Solution.}}
+Here is my solution.
+
+\section*{Problem 5}
+A \emph{clique} in an undirected graph $G$ is a set $C$ of vertices in $G$ with the property that every pair of distinct vertices in $C$ are adjacent (i.e., connected by an edge) in $G$.
+
+An \emph{independent set} in an undirected graph $G$ is a set $I$ of vertices in $G$ with the property that every pair of distinct vertices in $I$ are not adjacent in $G$.
+
+Prove the following statement on Ramsey numbers: Every undirected graph of $6$ vertices contains either a clique of $3$ vertices or an independent set of $3$ vertices (or both).
+
+\paragraph{\textcolor{brown}{Solution.}}
+Suppose $G$ is a graph of $6$ vertices. We can consider a vertex $v \in G$. Clearly $v$ can have $0$ to $5$ edges connected to it, in other words $0 \leq \text{deg}(v) \leq 5$. We can consider the following cases:\\
+If $v$ has degree $3$ or more, then we can find at least 3 neighbors of $v$ let us call them $x,y,z$. If $x,y, z$ have at least 1 connection to another, they from a clique with $v$. If they do not have any connection between them, then they form an independent set.\\
+If $v$ has degree $2$ or less, then we can consider the other three vertices not connected to $v$, let us call them $a,b,c$. Either all $a,b,c$ are mutual friends and we are done with a clique, or there are two who do not have an edge between them WLOG call it $a,b$ and then $v,a,b$ form an independent set.\\
+
+
+\section*{Problem 6}
+A \emph{quasi-kernel} in a directed graph $G = (V, E)$ is an \emph{independent set} (See Problem 5) $Q$ of vertices with the property that for any vertex $v \in V \setminus Q$, there exists a vertex $u \in Q$, so that there is a simple path of length at most $2$ from $u$ to $v$.
+
+As a non-obvious fact, there is at least one quasi-kernel in every directed graph. (You can stop reading now and try to prove it yourself.) Here is an algorithm that finds one.
+
+\begin{algorithm}
+\caption{Finding a quasi-kernel}
+\label{alg:qk}
+Name the vertices $\{v_1, v_2, \ldots, v_n\}$\;
+Initially all vertices are active\;
+\ForEach{$i$ from $1$ to $n$}{
+    \If{$v_i$ is active}
+    {
+        \ForEach{edge from $v_i$ to $v_j$ in the graph $G$}{
+            Deactivate $v_j$ if $j > i$\;
+        }
+    }
+}
+\ForEach{$i$ from $n$ down to $1$}{
+    \If{$v_i$ is active}
+    {
+        \ForEach{edge from $v_i$ to $v_j$ in the graph $G$}{
+            Deactivate $v_j$ if $j < i$\;
+        }
+    }
+}
+Output the active vertices as a quasi-kernel\;
+\end{algorithm}
+
+Prove the correctness of \Cref{alg:qk}, and write down its running time (assuming a good implementation).
+
+\paragraph{\textcolor{brown}{Solution.}}
+\textbf{Description of the Algorithm}\\
+The first loop of the algorithm goes through all the vertices in the graph and deactivates all the vertices that are outing from the current vertex if they have a higher index. The second loop goes through all the vertices in the graph in reverse order and deactivates all the vertices that are outgong from the current vertex if they have a lower index. The vertices that are not deactivated are output as the quasi-kernel.\\
+To prove this algorithm, we need to show that for any $v \in V \setminus Q$, there exists a vertex $u \in Q$ such that there is a simple path of length at most $2$ from $u$ to $v$.\\
+Let $v \in V \setminus Q$. Thus $v$ must have been either deactivated in the first or the second loop.\\
+If $v$ was deactivated in the first loop then there exist a vertex $u$ with index lower then $v$'s index with an edge from $u$ to $v$. \\
+If $u$ is still active at then end of the algorithm then there is a path from $u \to v$ \\
+If $u$ is later deactivated it would have been due to another vertex with a higher index $w \in Q$ and then we have a path from $w \to u \to v$ \\
+If $v$ was deactivated in the second loop then there exist a vertex $u$ with index higher then $v$'s index with an edge from $u$ to $v$. \\
+Clearly $u$ must still be active at the end of the algorithm and then we have a path from $u \to v$\\
+\textbf{Running Time}\\
+There are two loops in this algorithm. The first loop goes through all the vertices and for each vertex, it goes through all the edges. The second loop goes through all the vertices and for each vertex, it goes through all the edges. Thus the running time of this algorithm is $O(V+E)$ where $V$ is the number of vertices and $E$ is the number of edges.\\
