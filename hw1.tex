@@ -77,9 +77,9 @@ An \emph{independent set} in an undirected graph $G$ is a set $I$ of vertices in
 Prove the following statement on Ramsey numbers: Every undirected graph of $6$ vertices contains either a clique of $3$ vertices or an independent set of $3$ vertices (or both).
 
 \paragraph{\textcolor{brown}{Solution.}}
-Suppose $G$ is a graph of $6$ vertices. We can consider a vertex $v \in G$. Clearly $v$ can have $0$ to $5$ edges connected to it, in other words $0 \leq \text{deg}(v) \leq 5$. We can consider the following cases:\\
-If $v$ has degree $3$ or more, then we can find at least 3 neighbors of $v$ let us call them $x,y,z$. If $x,y, z$ have at least 1 connection to another, they from a clique with $v$. If they do not have any connection between them, then they form an independent set.\\
-If $v$ has degree $2$ or less, then we can consider the other three vertices not connected to $v$, let us call them $a,b,c$. Either all $a,b,c$ are mutual friends and we are done with a clique, or there are two who do not have an edge between them WLOG call it $a,b$ and then $v,a,b$ form an independent set.\\
+Suppose $G$ is a graph of $6$ vertices. We can consider a vertex $v \in G$. Clearly $v$ can have $0$ to $5$ edges connected to it, in other words $0 \leq \text{deg}(v) \leq 5$. We can consider the following cases:\\ \\
+If $v$ has degree $3$ or more, then we can find at least 3 neighbors of $v$. Let us call them $x,y,z$. If $x,y,z$ have at least one edge that connects any of the two members, then the two connected members form a clique with $v$. If they do not have any connection between them, then $x,y,z$ form an independent set.\\ \\
+If $v$ has degree $2$ or less, then we can consider any combination of three vertices that are not connected to $v$, which we can call $a,b,c$. We are guaranteed at least three of these vertices because $v$ is degree 2 or less. If there are edges connecting every pair of distinct vertices of $a,b,c$, $a,b,c$ form a clique. If there are two who do not have an edge between them, the two unconnected vertices form an independent set with $v$.
 
 
 \section*{Problem 6}
@@ -115,13 +115,13 @@ Prove the correctness of \Cref{alg:qk}, and write down its running time (assumin
 
 \paragraph{\textcolor{brown}{Solution.}}
 \textbf{Description of the Algorithm}\\
-The first loop of the algorithm goes through all the vertices in the graph and deactivates all the vertices that are outing from the current vertex if they have a higher index. The second loop goes through all the vertices in the graph in reverse order and deactivates all the vertices that are outgong from the current vertex if they have a lower index. The vertices that are not deactivated are output as the quasi-kernel.\\
+The first loop of the algorithm goes through all the vertices in the graph and deactivates all the vertices that are outgoing from the current vertex if they have a higher index. The second loop goes through all the vertices in the graph in reverse order and deactivates all the vertices that are outgoing from the current vertex if they have a lower index. The vertices that are not deactivated are output as the quasi-kernel.\\
 To prove this algorithm, we need to show that for any $v \in V \setminus Q$, there exists a vertex $u \in Q$ such that there is a simple path of length at most $2$ from $u$ to $v$.\\
 Let $v \in V \setminus Q$. Thus $v$ must have been either deactivated in the first or the second loop.\\
-If $v$ was deactivated in the first loop then there exist a vertex $u$ with index lower then $v$'s index with an edge from $u$ to $v$. \\
-If $u$ is still active at then end of the algorithm then there is a path from $u \to v$ \\
-If $u$ is later deactivated it would have been due to another vertex with a higher index $w \in Q$ and then we have a path from $w \to u \to v$ \\
-If $v$ was deactivated in the second loop then there exist a vertex $u$ with index higher then $v$'s index with an edge from $u$ to $v$. \\
-Clearly $u$ must still be active at the end of the algorithm and then we have a path from $u \to v$\\
+If $v$ was deactivated in the first loop, then there exists a vertex $w$ with index lower then $v$'s index with an edge from $u$ to $v$. \\
+If $w$ is still active at then end of the algorithm, then $w$ is an element of the output of the algorithm. There is a path of length 1 from $w \to v$, since $w$ deactivated $v$. \\
+If $w$ is later deactivated in the second loop, it would have been due to another active vertex with a higher index, which we call $x$. Since we reached $x$ in the second loop, it is impossible to deactivate it, as the loop will proceed down the indices past $x$, and a lower-index vertex cannot deactivate a higher-index vertex in the second loop. Therefore we have a path of length 2 from $x \to w \to v$. \\
+If $v$ was deactivated in the second loop then there exist a vertex $w$ with index higher then $v$'s index with an edge from $u$ to $v$. Again, $w$ cannot be deactivated if it was reached in the second loop, so there is a path of length 1 from $w$ to $v$ \\
+From these cases, we have concluded that the maximum path length from a member of the output of the algorithm to a vertex $v \in V \setminus Q$ is 2, so the output is a quasi-kernel.
 \textbf{Running Time}\\
-There are two loops in this algorithm. The first loop goes through all the vertices and for each vertex, it goes through all the edges. The second loop goes through all the vertices and for each vertex, it goes through all the edges. Thus the running time of this algorithm is $O(V+E)$ where $V$ is the number of vertices and $E$ is the number of edges.\\
+There are two loops in this algorithm. The first loop goes through all the vertices and for each vertex that is still active, it goes through all the edges. The second loop goes through all the vertices and for each vertex that is still active, it goes through all the edges. The worst-case is that all vertices and edges have to be considered; improvements can be made since the presence of edges will turn off some vertices, but this correction would be some coefficient on the two terms, or constant, so it does not matter in big O. Besides, optimizing how edges turn off vertices would no longer be worst case. Thus the running time of this algorithm is $O(V+E)$ where $V$ is the number of vertices and $E$ is the number of edges.\\
