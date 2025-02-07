@@ -17,12 +17,12 @@ Is each of the following statements true or false? Give proofs for your answers.
 
 \paragraph{\textcolor{brown}{Solution.}}
 \begin{enumerate}
-    \item Here is my solution.
     \item 
     \item 
+    \item True, Suppose $f(n) \in o\big(g(n)\big)$ then $\forall c > 0 , f(n) < c \cdot g(n)$ for all sufficiently large $n$. We need to show that for our choice of $d$ that $2^{f(n)} < d \cdot o\big(2^{g(n)}\big)$ we can let $c = log_2(d)$ and thus $f(n) < c \cdot g(n) \implies 2^{f(n)} < 2^{c \cdot g(n)} = d \cdot 2^{g(n)}$.
     \item 
     \item
-    \item 
+    \item False. Suppose $f(n) \in \omega(g(n)\big)$ and $g(n) \in \Omega\big(f(n)\big)$, then by definition of $\omega$, $\forall c >0$ $f(n) > c \cdot g(n)$ for all $n > N$. By definition of $\Omega$, $\exists d > 0$ such that $g(n) > d \cdot f(n)$ for all $n > M$. If we let $K = max(N,M)$, then for all $n > k$ $f(n) > c \cdot g(n) > c \cdot d \cdot f(n)$, which implies that $1 > c \cdot d$, which is a contradiction.
     \item 
 \end{enumerate}
 
@@ -43,10 +43,10 @@ Evaluate and simplify each of the following functions of $n$ using the $\Theta$ 
 \begin{enumerate}
     \item Here is my solution.
     \item 
-    \item 
+    \item $\Theta(n \ln n)$ becuase we can simplify $n \ln \sqrt{n}$ to $\frac{1}{2} n \ln n$.
     \item 
     \item
-    \item 
+    \item $\Theta(4^n)$ because the sum of a geometric series is $\frac{a_1(1-r^n)}{1-r}$, and since $r = 4$ in this case the dominating term is $4^n$.
     \item 
     \item 
 \end{enumerate}
