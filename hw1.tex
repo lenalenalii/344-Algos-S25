@@ -17,13 +17,13 @@ Is each of the following statements true or false? Give proofs for your answers.
 
 \paragraph{\textcolor{brown}{Solution.}}
 \begin{enumerate}
-    \item 
+    \item True. Suppose $f(n) \in o\big(g(n)\big)$ then there exists constants $c > 0$ and $n_0$ such that for all sufficiently large n, $f(n) \le c \cdot g(n)$. We need to show that $log_2(10 + f(n)) \in O(log_2(10 + g(n)))$, meaning there exists a constant C such that $log_2(10+f(n)) \le Clog_2(10+g(n))$. Since the logarithm is a monotonically increasing function, $log_2(10+f(n)) \le log_2(10+cg(n)) = log_2(c) + log_2(10+g(n))$. Letting C = 1 and $C^\prime = log_2(c)$, $log_2(10+f(n)) \le Clog_2(10+g(n)) + C^\prime$. Thus, $\log_2 (10 + f(n)) \in O\big(\log_2 (10 + g(n))\big)$.
     \item 
     \item True, Suppose $f(n) \in o\big(g(n)\big)$ then $\forall c > 0 , f(n) < c \cdot g(n)$ for all sufficiently large $n$. We need to show that for our choice of $d$ that $2^{f(n)} < d \cdot o\big(2^{g(n)}\big)$ we can let $c = log_2(d)$ and thus $f(n) < c \cdot g(n) \implies 2^{f(n)} < 2^{c \cdot g(n)} = d \cdot 2^{g(n)}$.
-    \item 
+    \item True. Suppose $f_1(n) \in o\big(g_1(n))$ and $f_2(n) \in o\big(g_2(n))$, then there exists constants $c_1, c_2 > 0$ and $n_0$ such that for all sufficiently large n, $f_1(n) \le c_1 \cdot g_1(n)$, $f_2(n) \le c_2 \cdot g_2(n)$. Adding these, $f_1(n) + f_2(n) \le c_1 \cdot g_1(n) + c_2(g_2(n))$. Let C = max($c_1, c_2$), $f_1(n) + f_2(n) \le C(g_1(n) + g_2(n)\big)$. Thus, by definition, $f_1(n) + f_2(n) \in o\big(g_1(n) + g_2(n)\big)$.
     \item
     \item False. Suppose $f(n) \in \omega(g(n)\big)$ and $g(n) \in \Omega\big(f(n)\big)$, then by definition of $\omega$, $\forall c >0$ $f(n) > c \cdot g(n)$ for all $n > N$. By definition of $\Omega$, $\exists d > 0$ such that $g(n) > d \cdot f(n)$ for all $n > M$. If we let $K = max(N,M)$, then for all $n > k$ $f(n) > c \cdot g(n) > c \cdot d \cdot f(n)$, which implies that $1 > c \cdot d$, which is a contradiction.
-    \item 
+    \item False. Suppose $f(n) \in \Theta(g(n))$, then by definition, there exists positive constants $c_1, c_2$, and $n_0$ such that for all sufficiently large n, $c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)$. Dividing, $\frac{1}{c_2} f(n) \le g(n) \le \frac{1}{c_1} f(n)$. This satisfies the definition of $g(n) \in \Theta(f(n))$, meaning that $f(n) \in \Theta(g(n)) \iff g(n) \in \Theta(f(n))$.  
 \end{enumerate}
 
 \section*{Problem 2}
@@ -41,13 +41,13 @@ Evaluate and simplify each of the following functions of $n$ using the $\Theta$ 
 
 \paragraph{\textcolor{brown}{Solution.}}
 \begin{enumerate}
-    \item Here is my solution.
+    \item $\Theta(344^n)$ because exponentials grow faster than polynomials and $3^{3n}$ simplifies to $27^n$, which is slower than $344^n$.
     \item 
     \item $\Theta(n \ln n)$ becuase we can simplify $n \ln \sqrt{n}$ to $\frac{1}{2} n \ln n$.
-    \item 
+    \item $\Theta(n^3)$ because the sum of squares of the first n natural numbers is $\frac{n(n+1)(2n+1)}{6}$ and the dominating term is $\frac{2n^3}{6}$ = $\frac{n^3}{3}$.
     \item
     \item $\Theta(4^n)$ because the sum of a geometric series is $\frac{a_1(1-r^n)}{1-r}$, and since $r = 4$ in this case the dominating term is $4^n$.
-    \item 
+    \item $\Theta(\sqrt{n}e^{\sqrt{n}})$ because for large n, $\sum_{k = 1}^{n} e^{\sqrt{k}} \approx \int_{1}^{n} e^{\sqrt{x}}dx$. Using substitution, $\int e^u \cdot 2u du$. Using integration by parts, $\int ue^u du = ue^u - \int e^u du = ue^u - e^u$. Multiplying by 2, $\approx 2((\sqrt{n}e^{\sqrt{n}} - e^{\sqrt{n}}) - (\sqrt{1}e^1 - e^1))$. Thus, the dominant term is $2\sqrt{n}e^{\sqrt{n}}$. 
     \item 
 \end{enumerate}
 
