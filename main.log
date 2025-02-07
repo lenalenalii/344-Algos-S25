@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.17)  6 FEB 2025 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  6 FEB 2025 21:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/prana/OneDrive/Desktop/ALGO/344-Algos-S25/main.tex
-(c:/Users/prana/OneDrive/Desktop/ALGO/344-Algos-S25/main.tex
+**"c:/Users/alexl/Documents/CS/CS334 Algos/344-Algos-S25/main.tex"
+(c:/Users/alexl/Documents/CS/CS334 Algos/344-Algos-S25/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
-(c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
+(C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo
+(C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count187
@@ -23,24 +23,24 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (c:/texlive/2023/texmf-dist/tex/latex/preprint/fullpage.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/preprint\fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip50
-) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen141
-)) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen142
-) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count195
@@ -90,7 +90,7 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (c:/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks22
 \thm@bodyfont=\toks23
@@ -101,55 +101,55 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip55
 \thm@headsep=\skip56
 \dth@everypar=\toks27
-) (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/texlive/2023/texmf-dist/tex/latex/parskip/parskip.sty
+)) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks28
-) (c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count273
-)) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+)) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
- (c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-) (c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (c:/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count274
@@ -157,15 +157,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \@linkdim=\dimen150
 \Hy@linkcounter=\count275
 \Hy@pagecounter=\count276
- (c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count277
- (c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -178,15 +178,15 @@ Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4448.
 \c@Hy@tempcnt=\count278
- (c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4786.
 \XeTeXLinkMargin=\dimen151
- (c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count279
@@ -199,7 +199,7 @@ Package hyperref Info: backreferencing OFF on input line 6080.
 Package hyperref Info: Link coloring OFF on input line 6085.
 Package hyperref Info: Link coloring with OCG OFF on input line 6090.
 Package hyperref Info: PDF/A mode OFF on input line 6095.
- (c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -208,23 +208,23 @@ package with kernel methods
 \c@Hfootnote=\count282
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
- (c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
 \Fld@listcount=\count283
 \c@bookmark@seq@number=\count284
- (c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip57
-) (c:/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -242,15 +242,15 @@ Package cleveref Info: always capitalise cross-reference names on input line 782
 Package cleveref Info: include cross-reference names in hyperlinks on input line 7836.
 Package cleveref Info: include cross-reference names in hyperlinks on input line 7852.
 Package cleveref Info: always capitalise cross-reference names on input line 7852.
-) (c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
- (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-) (c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -260,25 +260,25 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (c:/texlive/2023/texmf-dist/tex/latex/libertine/libertine.sty
-Package: libertine 2023/11/26 (Bob Tennent) Supports Libertine and Biolinum fonts for all LaTeX engines.
- (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifxetex.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/libertine\libertine.sty
+Package: libertine 2024/04/23 (Bob Tennent) Supports Libertine and Biolinum fonts for all LaTeX engines.
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-) (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-) (c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks29
 \XKV@tempa@toks=\toks30
 )
 \XKV@depth=\count285
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
+)) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (c:/texlive/2023/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -292,19 +292,19 @@ LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
 )
 LaTeX Info: Redefining \oldstylenums on input line 485.
- (c:/texlive/2023/texmf-dist/tex/latex/libertine/LinLibertine_I.tex)) (c:/texlive/2023/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/libertine\LinLibertine_I.tex)) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count286
- (c:/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip58
- (c:/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count287
-) (c:/texlive/2023/texmf-dist/tex/latex/tools/xspace.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (c:/texlive/2023/texmf-dist/tex/latex/relsize/relsize.sty
+) (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip59
@@ -345,16 +345,16 @@ Package: relsize 2013/03/29 ver 4.1
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 29.
- (c:/texlive/2023/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ot1linuxlibertinet-tlf.fd
 File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 29.
- (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
 \l__pdf_internal_box=\box61
-) (./main.aux)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -376,11 +376,11 @@ LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 Package hyperref Info: Link coloring ON on input line 29.
- (./main.out) (./main.out)
+ (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
- (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count292
 \scratchdimen=\dimen160
@@ -401,61 +401,62 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 32.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
- (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
- (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 32.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 32.
- (./hw1.tex
+ (hw1.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
  [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}] [2]
-LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 63.
- (c:/texlive/2023/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
+{C:/Users/alexl/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}] [2]
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 66.
+ (C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxlibertinet-tlf.fd
 File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 63.
+(Font)              scaled to size 12.0pt on input line 66.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 73.
+(Font)              scaled to size 12.0pt on input line 76.
+ [3{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_kijugd.enc}]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 80.
+(Font)              scaled to size 8.0pt on input line 83.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 80.
+(Font)              scaled to size 6.0pt on input line 83.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
-
- []
-
-[3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc}])
-Underfull \hbox (badness 10000) in paragraph at lines 118--34
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--34
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 121--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--34
+Underfull \hbox (badness 10000) in paragraph at lines 121--34
 
  []
 
-[4] [5] (./main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--34
+
+ []
+
+[4] [5] [6] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -464,18 +465,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14012 strings out of 474166
- 233345 string characters out of 5749518
+ 14020 strings out of 474486
+ 236953 string characters out of 5743756
  1946542 words of memory out of 5000000
- 36086 multiletter control sequences out of 15000+600000
+ 36070 multiletter control sequences out of 15000+600000
  580751 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,16n,67p,810b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (5 pages, 337531 bytes).
+ 63i,16n,67p,815b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (6 pages, 356146 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

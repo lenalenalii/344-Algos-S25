@@ -54,8 +54,11 @@ Evaluate and simplify each of the following functions of $n$ using the $\Theta$ 
 \section*{Problem 3}
 In the stable matching problem, is it possible that there are $10!$ different stable matchings in an instance with $10$ vertices on each side? Give a proof for your answer. (Note that we assume strict preferences, that is, no vertex is indifferent between two vertices on the other side.)
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} \: \\
+Lets say we have a stable matching problem with 10 vertices on each side, which we will name $M=\{m_1, m_2, ..., m_{10}\}$ and $W=\{w_1, w_2, ..., w_{10}\}$. 
+\\We first propose that there are exactly $10!$ possible perfect matchings. This is simply a combinatorics problem: if arbitrarily match members of set $M$ to members of set $W$, $m_1$ has 10 choices of $w_n$ that it can pair to, $m_2$ has 9, $m_3$ has 8, and so on, making $10*9*...*2*1=10!$ possible perfect matchings.
+\\With this knowledge, if we prove that a single one of these perfect matchings is unstable, then we have proven that there cannot be $10!$ different stable matchings for this problem.
+\\Consider a scenario where $m_1$ has the following preferences: $w_1 \succ w_2 \succ ...$ and $m_2$ has the following preferences: $w_2 \succ w_1 \succ ...$. Meanwhile, $w_1$ has the following preferences: $m_1 \succ m_2 \succ ...$ and $w_2$ has the following preferences: $m_2 \succ m_1 \succ ...$. Disregarding all other members of both sets, there exists at least one perfect matching where $m_1$ is paired with $w_2$ and $m_2$ is paired with $w_1$. This matching is unstable, so the scenario does not have $10!$ different stable matchings.
 
 \section*{Problem 4}
 We have an $n \times n$ matrix $A$. The entries in the matrix are distinct real numbers. Our goal is to select $n$ entries so that
