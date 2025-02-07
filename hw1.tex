@@ -69,8 +69,11 @@ We have an $n \times n$ matrix $A$. The entries in the matrix are distinct real 
 \end{itemize}
 Prove that this is always possible by reducing our problem to the stable matching problem.
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} \: \\
+We can map this problem to the stable matching problem with $n$ vertices on each side. Map all rows to one side of the stable matching problem, which we will call $M$, such that $m_i$ corresponds to row $i$ in $A$. Map all columns to the other side, which we will call $W$. Then construct the preference list as follows:
+\\For a vertice of $M$, which we will call $m_i$, we go through its corresponding row and construct $m_i$'s preference list such that if $A_{ij} < A_{ik}$, $j \neq k$, then $w_j$ is lower on $m_i$'s preference list than $w_k$. In other words, $m_i$'s preference list is created by sorting its elements in $A$ from largest to smallest and then taking their column index.
+\\For a vertice of $W$, which we will call $w_j$, we do the same process as above, except our requirement is $A_{ij} > A_{kj}$, where $i \neq k$. In other words, we sort the elements of column $j$ from smallest to largest, then take their indices.
+\\From this process, we create a full stable matching problem with two sides of $n$ vertices each as well as full preference lists. We have now mapped our problem to the stable matching problem and can use the Gale-Shapley Algorithm to solve it.
 
 \section*{Problem 5}
 A \emph{clique} in an undirected graph $G$ is a set $C$ of vertices in $G$ with the property that every pair of distinct vertices in $C$ are adjacent (i.e., connected by an edge) in $G$.

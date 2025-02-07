@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  6 FEB 2025 21:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  6 FEB 2025 22:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -424,39 +424,39 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/L
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 66.
+ [3{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 76.
- [3{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_kijugd.enc}]
+(Font)              scaled to size 12.0pt on input line 79.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 83.
+(Font)              scaled to size 8.0pt on input line 86.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 83.
+(Font)              scaled to size 6.0pt on input line 86.
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 121--34
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--34
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
+
+ []
+
+[4{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_kijugd.enc}])
+Underfull \hbox (badness 10000) in paragraph at lines 124--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--34
+Underfull \hbox (badness 10000) in paragraph at lines 124--34
 
  []
 
-[4] [5] [6] (main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--34
+
+ []
+
+[5] [6] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -473,7 +473,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  63i,16n,67p,815b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (6 pages, 356146 bytes).
+Output written on main.pdf (6 pages, 357720 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  53 named destinations out of 1000 (max. 500000)
