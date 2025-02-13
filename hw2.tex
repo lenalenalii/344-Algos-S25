@@ -1,0 +1,80 @@
+\paragraph{\textcolor{red}{Acknowledgment:} Our team members are \textbf{Alexander Lin (al1655)}, \textbf{Pranav Tikkawar (pt422)}, and \textbf{Ivan Zheng (iz72)}}.
+
+\section*{Problem 1}
+Solve these recurrence relations and represent the answers in the $\Theta$ notation. In each of these questions, the given formulas are for $n > 100$, and we know $T(n) = 1$ for all $n \leq 100$. All fractional inputs are rounded down. Other than the first one below, you can write down your answer without providing your proof (which can be tedious), but you should be able to give a proof if asked. Example: $T(n) = 2T(n/2) + \frac{n}{\ln n}$ gives $T(n) = \Theta(n \log \log n)$.
+\begin{enumerate}
+    \item $T(n) = T(0.4n) + T(0.3n) + T(0.2n) + n$. (Prove this one formally using strong induction.)
+    \item $T(n) = T(n/3) + 10$.
+    \item $T(n) = 7 T(n/2) + n^2$.
+    \item $T(n) = T(n/3) + T(2n/3) + n \ln n$.
+    \item $T(n) = 2T(n - 1) + 1$.
+    \item $T(n) = T(n - 1) + T(n - 2) + 1$.
+    \item $T(n) = T(\sqrt{n}) + 344$.
+\end{enumerate}
+
+\paragraph{\textcolor{brown}{Solution.}}
+\begin{enumerate}
+    \item Here is my solution.
+    \item 
+    \item 
+    \item 
+    \item
+    \item 
+    \item 
+\end{enumerate}
+
+\section*{Problem 2}
+Given a directed graph $G = (V, E)$, we want to count the number of walks of length $k$ from $u$ to $v$ for a given pair of vertices $(u, v)$. We are only interested in this number modulo a constant $p$, so that each basic arithmetic operation only takes constant time. Let $A$ be the adjacency matrix of $G$, and let $B = A^k$.
+\begin{enumerate}
+    \item Prove using induction that $B_{uv}$ is exactly the number of walks of length $k$ from $u$ to $v$.
+    \item It is known that $n \times n$ matrix multiplication can be done in $O(n^{2.372})$ time. Design an algorithm that counts the number of walks (modulo $p$) of length $k$ from $u$ to $v$ in $O(n^{2.372} \log k)$ time, where $n = |V|$.
+\end{enumerate}
+
+\paragraph{\textcolor{brown}{Solution.}}
+\begin{enumerate}
+    \item Here is my solution.
+    \item 
+\end{enumerate}
+
+
+\section*{Problem 3}
+We have an array of $n$ distinct integers $(a_1, a_2, \ldots, a_n)$. An inversion is a pair of indices $(i, j)$ with $i < j$ and $a_i > a_j$. The weight of an inversion $(i, j)$ is defined as $(a_i - a_j)^2$. Give an algorithm that computes the sum of weights of all inversions in $O(n \log n)$ time.
+
+\paragraph{\textcolor{brown}{Solution.}}
+Here is my solution.
+
+\section*{Problem 4}
+Given $n$ points $(p_1, p_2, \ldots, p_n)$ on a Euclidean plane in \emph{general position} (that is, no two points coincide and no three points are on the same line), find three different points $p_i, p_j, p_k$ among them to minimize the perimeter of the triangle with $p_i, p_j, p_k$ as its vertices. Your algorithm should run in $O(n \log n)$ time. You can assume that among the points $(p_1, p_2, \ldots, p_n)$, all $x$-coordinates are distinct and all $y$-coordinates are distinct.
+
+\paragraph{\textcolor{brown}{Solution.}}
+Here is my solution.
+
+\section*{Assumptions for Problems 5 and 6}
+All basic arithmetic operations can be done in constant time, and the fast Fourier transform runs in $O(n \log n)$ time.
+
+\section*{Problem 5}
+The RUCS stock price has an interesting behavior. Every day independently, exactly one of the following events will happen.
+\begin{itemize}
+    \item The price doubles ($\times 2$); this happens with probability $0.5$.
+    \item The price quadruples ($\times 4$); this happens with probability $0.2$.
+    \item The price halves ($\times 0.5$); this happens with probability $0.3$.
+\end{itemize}
+
+The price of the RUCS stock is $1$ today, and we need to calculate the probability that its price becomes at least $p$ after $n$ days. Design an algorithm for this that runs in $O(n \log n)$ time. $O(n^2)$ running time is also good if $O(n \log n)$ seems out of reach. (Hint: This problem is an application of polynomial multiplication and the fast Fourier transform.)
+
+\paragraph{\textcolor{brown}{Solution.}}
+Here is my solution.
+
+\section*{Problem 6}
+There are $n$ stars in a different universe, and all of them are negligibly small in terms of volume. They happen to be in the same straight line, and their locations are $1, 2, \ldots, n$. (Thus the distance between each consecutive pair is $1$.) The star $k$ has mass $m_k > 0$.
+
+You are interested in knowing the net gravity $F_k$ that each star $k$ receives. It is defined as
+\[
+F_k = -\sum_{j < k} \frac{G m_j m_k}{(k - j)^2} + \sum_{j > k} \frac{G m_j m_k}{(k - j)^2},
+\]
+where $G$ is the gravitational constant.
+
+Design an algorithm to compute all of $F_1, F_2, \ldots, F_k$ in $O(n \log n)$ time. (Hint: This problem is an application of polynomial multiplication and the fast Fourier transform.)
+
+\paragraph{\textcolor{brown}{Solution.}}
+Here is my solution.
