@@ -14,13 +14,13 @@ Solve these recurrence relations and represent the answers in the $\Theta$ notat
 
 \paragraph{\textcolor{brown}{Solution.}}
 \begin{enumerate}
-    \item Here is my solution.
-    \item 
-    \item 
-    \item 
-    \item
-    \item 
-    \item 
+    \item $\Theta(n)$ because proof by induction. Base case: for n $\le$ 100, T(n) = 1. Inductive hypothesis: assume T(k) = $\Theta(k)$ for all k $<$ n. Inductive step: T(n) = $\Theta(0.4n) + \Theta(0.3n) + \Theta(0.2n) + n = \Theta(n)$. Thus, T(n) = $\Theta(n)$.
+    \item $\Theta(logn)$ because using Master Theorem, a = 1, b = 3, f(n) = 10, c = 0, log$_b$a = 0. Thus, $\Theta(n^{log_3 1}logn) = \Theta(logn)$.
+    \item $\Theta(n^{log_2 7})$ because using Master Theorem, a = 7, b = 2, f(n) = n$^2$, c = 2, log$_b$a $\approx$ 2.807. Thus, T(n) = $\Theta(n^{log_2 7})$.
+    \item $\Theta(nlog^2n)$ because the depth is log$_3$n and each level's work is n$\ln$n. Thus, $\Theta(nlnn\cdot log_3n)$ = $\Theta(nlog^2n)$.
+    \item $\Theta(2^n)$ because T(n) = 2T(n - 1) + 1 and T(n - 1) = 2T(n -2) + 1. Expanding, 2(2T(n - 2) + 1) + 1 = 4T(n - 2) + 3. T(n - 2) = 2T(n - 3) + 1, expanding again, 4(2T(n - 3) + 1) + 3 = 8T(n - 3) + 7. We can see the formula of T(n) = 2$^k$T(n - k) + (2$^k$ - 1). Assuming T(0) = 0, T(n) = 2$^n$ - 1. Thus, $\Theta(2^n)$.
+    \item $\Theta(\phi^n)$ where $\phi$ = $\frac{1 + \sqrt{5}}{2}$ because we can see the ressemblance to the Fibonacci sequence in T(n). 
+    \item $\Theta(loglogn)$. Assume n = $2^{2^k}$, then $\sqrt{n} = 2^{2^{k - 1}}$. T(n) = T($n^{\frac{1}{2}}$) + 344. Expanding, T($n^{\frac{1}{2}}$) = T($n^{\frac{1}{4}}$) + 344 $\rightarrow$ T($n^{\frac{1}{4}}$) = T($n^{\frac{1}{8}}$) + 344. Since n = $2^{2^k}$, $log_2(log_2(n))$ = k. Thus, T(n) = 344 $\cdot$ $log_2(log_2(n))$.
 \end{enumerate}
 
 \section*{Problem 2}
