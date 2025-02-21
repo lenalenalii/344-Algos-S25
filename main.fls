@@ -180,8 +180,17 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ot1.tfm
+<<<<<<< Updated upstream
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ot1.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-ot1.tfm
+=======
+INPUT ./hw2.tex
+INPUT ./hw2.tex
+INPUT ./hw2.tex
+INPUT ./hw2.tex
+INPUT hw2.tex
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ot1.tfm
+>>>>>>> Stashed changes
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -199,12 +208,15 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+<<<<<<< Updated upstream
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
 INPUT ./hw1.tex
 INPUT ./hw1.tex
 INPUT ./hw1.tex
 INPUT ./hw1.tex
 INPUT hw1.tex
+=======
+>>>>>>> Stashed changes
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
 INPUT c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -220,16 +232,26 @@ INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-ot
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ot1--base.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
+<<<<<<< Updated upstream
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-ot1.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-ot1--base.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
+=======
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-ot1.tfm
+>>>>>>> Stashed changes
 INPUT c:/texlive/2023/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 INPUT c:/texlive/2023/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 INPUT c:/texlive/2023/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1.tfm
+<<<<<<< Updated upstream
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
+=======
+INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-ot1.vf
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-ot1--base.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc
+>>>>>>> Stashed changes
 INPUT c:/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
@@ -241,9 +263,20 @@ INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+<<<<<<< Updated upstream
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+=======
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+>>>>>>> Stashed changes

@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.17)  30 JAN 2025 16:50
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.17)  21 FEB 2025 16:16
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -412,6 +416,7 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 32.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 32.
+<<<<<<< Updated upstream
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
@@ -422,10 +427,22 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc}] [2]
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 63.
+=======
+ (./hw2.tex
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1.
+ [1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}] [2]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 58.
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 69.
+>>>>>>> Stashed changes
  (c:/texlive/2023/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+<<<<<<< Updated upstream
 (Font)              scaled to size 12.0pt on input line 63.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 80.
@@ -440,6 +457,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--39
  []
 
 [4] [5] (./main.aux)
+=======
+(Font)              scaled to size 12.0pt on input line 69.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
+
+ []
+
+[3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}]) [4] (./main.aux)
+>>>>>>> Stashed changes
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -448,6 +474,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< Updated upstream
  14013 strings out of 474166
  233373 string characters out of 5749518
  1944542 words of memory out of 5000000
@@ -461,5 +488,20 @@ PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
  53 named destinations out of 1000 (max. 500000)
+=======
+ 13991 strings out of 474166
+ 232998 string characters out of 5749518
+ 1940542 words of memory out of 5000000
+ 36074 multiletter control sequences out of 15000+600000
+ 577993 words of font info for 81 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 63i,6n,67p,591b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (4 pages, 334606 bytes).
+PDF statistics:
+ 146 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+>>>>>>> Stashed changes
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
