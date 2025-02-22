@@ -106,5 +106,15 @@ where $G$ is the gravitational constant.
 
 Design an algorithm to compute all of $F_1, F_2, \ldots, F_k$ in $O(n \log n)$ time. (Hint: This problem is an application of polynomial multiplication and the fast Fourier transform.)
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} \: \\
+$\empty$ \\
+We can represent the net gravity $F_k$ as a polynomial. The idea is to represent the mass of each star as a polynomial and then use polynomial multiplication to compute the net gravity for all stars. \\
+When we consider this equation we can rewrite it as: $F_k = G m_k\left( \sum_{d=1}^{n-k} m_{k+d} w_d - \sum_{d=1}^{k-1} m_{k-d}w_d\right)$
+where $w_d = \frac{1}{d^2}=\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+...+\frac{1}{n^2}$.\\
+We can represent the mass of the stars as a polynomial $M = m_1 + m_2x + m_3x^2 + \ldots + m_nx^{n-1}$ and the weights as a polynomial $W = 1 + \frac{1}{2^2}x + \frac{1}{3^2}x^3 + \ldots + \frac{1}{n^2}x^n$. We can then use polynomial multiplication to compute the net gravity for all stars since \\
+$$S_{forward} = m_1w_1 + m_2w_2 + \ldots + m_nw_n = M \ast W$$
+$$S_{backward} = m_n w_1 + m_{n-1}w_2 + \ldots + m_1w_n = M_{reversed} \ast W$$
+\\ Here, we have left out the powers of $x$ involved in each term, and $M_{reversed}$ is simply reversing the elements of $M$. We can then use our $S$ to compute the net gravity for all stars. \\
+$$ F_k = G m_k (S_{forward}[k] - S_{backward}[n-k-1])$$
+\\ Here, $S[n]$ indicates that we are taking the elements of $S$ starting from term $n$. We are obviously taking only coefficients and no longer care about the powers of $x$.
+\\We can use the fast Fourier transform to compute the polynomial multiplication needed to calculate $S_{forward}$ and $S_{backward}$ in $O(n \log n)$ time. The construction of the polynomials $M$ and $W$ will also be $O(n)$, and the final process of putting together the terms to find our $F_k$ is also $O(n)$ since we have computed all the necessary elements already, so the arithmetic is constant time. The final time complexity of the algorithm is therefore $O(n \log n)$.

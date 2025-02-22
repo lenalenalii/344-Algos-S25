@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  21 FEB 2025 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  21 FEB 2025 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -477,7 +477,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--96
 
  []
 
-[5{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}]) [6] (main.aux)
+[5{C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
+
+ []
+
+
+Overfull \hbox (10.55815pt too wide) in paragraph at lines 109--115
+\OT1/LinuxLibertineT-TLF/m/n/12 When we con-sider this equa-tion we can rewrite it as: $\OML/cmm/m/it/12 F[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 Gm[] []$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+ []
+
+) [6] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -494,7 +514,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  63i,6n,67p,865b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (6 pages, 358777 bytes).
+Output written on main.pdf (6 pages, 364511 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  45 named destinations out of 1000 (max. 500000)
