@@ -32,8 +32,9 @@ Given a directed graph $G = (V, E)$, we want to count the number of walks of len
 
 \paragraph{\textcolor{brown}{Solution.}}
 \begin{enumerate}
-    \item Here is my solution.
-    \item 
+    \item We need to prove that $B_{uv}$ is the number of walks of length k from u to v. Base case: for k = 1, B = A. By definition, $A_{uv}$ = 1 if there is an edge from u to v, which is the number of walks of length 1 from u to v. Inductive hypothesis: assume that for some $k \ge 1$, $(A^k)_{uv}$ is the number of walks of length k from u to v. Inductive step: to show $A^{k+1}$ is the number of walks of length k from u to v, using matrix multiplication, $(A^{k+1})_{uv} = \sum_{w\in v}(A^k)_{uw} \cdot A_{wv}$, where $(A^k)_{uw}$ is the number of walks of length k from u to w and $A_{wv}$ is 1 is there is a direct edge from w to v. Summing over all intermediate vertices w, this gives the total number of walks of length k + 1 from u to v. 
+    \item Initialize B as identity matrix. Using exponentiation by squaring: $\\$ while $k > 0$: $\\$ if k is odd, multiply B = $(B \cdot A)$ mod $p$ $\\$ update A = $(A \cdot A)$ mod $p$ $\\$ divide k by 2 $\\$ return $B_{uv}$ mod $p$ $\\$ Each matrix multiplication takes $O(n^{2.372})$ time and the number of multiplications by exponentiation by squaring is $O(logk)$. 
+    
 \end{enumerate}
 
 
@@ -41,13 +42,39 @@ Given a directed graph $G = (V, E)$, we want to count the number of walks of len
 We have an array of $n$ distinct integers $(a_1, a_2, \ldots, a_n)$. An inversion is a pair of indices $(i, j)$ with $i < j$ and $a_i > a_j$. The weight of an inversion $(i, j)$ is defined as $(a_i - a_j)^2$. Give an algorithm that computes the sum of weights of all inversions in $O(n \log n)$ time.
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+We can do this by using a modified merge sort. The idea is to count the number of inversions while merging two sorted halves of the array. We can also keep track of the sum of weights of inversions during this process.
+The algorithm works as follows:
+\begin{enumerate}
+    \item Split the array into two halves.
+    \item Recursively count the inversions and their weights in each half.
+    \item Merge the two halves while counting the inversions that cross the split.
+    \item During the merge step, for each element in the left half, count how many elements in the right half are smaller and calculate their weights.
+    \item The total weight of inversions is the sum of the weights from the left half, right half, and the cross-inversions.
+    \item Return the total weight.
+    \end{enumerate}
+The time complexity of this algorithm is $O(n \log n)$ because the merge sort algorithm runs in $O(n \log n)$ time, and we are only adding a constant amount of work during the merge step.
+The space complexity is $O(n)$ for the temporary arrays used during the merge step.
 
 \section*{Problem 4}
 Given $n$ points $(p_1, p_2, \ldots, p_n)$ on a Euclidean plane in \emph{general position} (that is, no two points coincide and no three points are on the same line), find three different points $p_i, p_j, p_k$ among them to minimize the perimeter of the triangle with $p_i, p_j, p_k$ as its vertices. Your algorithm should run in $O(n \log n)$ time. You can assume that among the points $(p_1, p_2, \ldots, p_n)$, all $x$-coordinates are distinct and all $y$-coordinates are distinct.
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} \: \\
+The solution is to essentially divide and conquer the problem recursively into smaller problems. In the end, the final complexity of the algorithm will be $O(n\log n)$. \\
+
+We follow a similar idea to the way of finding smallest distance between two points given during lecture. Lets call our set of points $P$. We sort all points in $P$ by x-coordinate and y-coordinate, which is two operations of order $O(n \log n)$, to be used later.
+Our algorithm is as follows: \\ \\ 
+1. If the size of $P$ is less than or equal to some arbitrary limit, lets say ten points, then manually compute the smallest perimeter triangle by enumerating through every combination of three points, returning the triplet and the total perimeter $p$. \\ \\
+2. Draw a vertical line that divides $P$ into $P_1$ and $P_2$. Recursively run this algorithm on $P_1$ and $P_2$ to get their triplets and minimum perimeters $p_1$ and $p_2$. \\ \\ 
+3. Let $d$ be the smaller of $p_1$ and $p_2$. We now need to see if we can construct a smaller perimeter triangle using points from both $P_1$ and $P_2$. Here, we only need to consider points within distance $\frac{d}{2}$ from the line we drew in step 2. 
+\\ \\ This is because we are considering perimeters of triangles while taking points from both $P_1$ and $P_2$. Therefore, if a point is further than $\frac{d}{2}$ from the line, the minimum perimeter triangle we can draw with it has length $p > 2 * \frac{d}{2} = d$, as we must pick a point on the line and another $\frac{d}{2}$ from the line, giving length $\frac{d}{2}$, and the sum of the other two sides drawn by taking any third point must be greater than the first (triangle inequality).
+We can find these points in $O(n)$ time because we have presorted by x-coordinate.
+\\ \\ We can now split this "tape" taken around the line into imaginary squares of side length $\frac{d}{4}$. We can guarantee that there are no more than two points in each of these boxes. This is because if we do, then these three points will construct a triangle with a perimeter smaller than $d$.
+To show this is true, we want to construct the largest triangle in the unit square. Consider vectors $\vec{a}, \vec{b}$ as the short sides of the triangle and $\vec{c}=\vec{a}+\vec{b}$ as the long side, where the starting and ending points of the vectors are inside the unit square. Then $\|a+b\|^2=(a+b)*(a+b)=\|a\|^2+2(a*b)+\|b\|^2$. Then we have $\|a\|^2+\|b\|^2\le \|a+b\|^2$. But we want to maximize the sum of all three of these quantities, so clearly we must take $\|a\|^2+\|b\|^2=\|a+b\|^2$, which is a right triangle. 
+The largest right triangle in a unit square is clearly when we take our three points at three different corners. If we move any of the two points on the diagonal "inwards" towards the middle point, we will obviously create a smaller right triangle, and if we rotate the right triangle, we shrink all three sides as well. The perimeter of this right triangle is $2+\sqrt{2}=3.414...$, so the largest perimeter triangle we can construct in our squares of $\frac{d}{4}$ have perimeter $\frac{3.414...}{4}d < d$. Therefore we cannot have more than 2 points in each box.
+\\ \\ Now that we have this established, we only have to check points in these "boxes" up to three rows away. At the fourth row, the smallest distance we can get is $\frac{3}{4}d$, so the smallest triangle we can make has perimeter $p \ge 2*\frac{3}{4}d > d$. We therefore have to check the closest 16 boxes, or the closest 32 points, as decided by y-coordinate. Fortunately, we have already sorted the y-coordinates, so we can find these in $O(n)$ time. We must check $\binom{32}{2}=496$ combinations of points and calculate the perimeters of the triangles formed, but this is also $O(n)$ time.
+\\ \\
+4. Check the closest 32 points and update $d$ if a smaller perimeter triangle is found. Return $d$.
+\\ \\ The overall time complexity of the algorithm is the same as the one presented in lecture: $T(n)=2T(\frac{n}{2}) + O(n)$ for the algorithm, which by Master theorem is $O(n\log n)$, and $O(n\log n)$ for the two sorts. This gives us an overall time complexity of $O(n\log n)$
 
 \section*{Assumptions for Problems 5 and 6}
 All basic arithmetic operations can be done in constant time, and the fast Fourier transform runs in $O(n \log n)$ time.
@@ -62,8 +89,11 @@ The RUCS stock price has an interesting behavior. Every day independently, exact
 
 The price of the RUCS stock is $1$ today, and we need to calculate the probability that its price becomes at least $p$ after $n$ days. Design an algorithm for this that runs in $O(n \log n)$ time. $O(n^2)$ running time is also good if $O(n \log n)$ seems out of reach. (Hint: This problem is an application of polynomial multiplication and the fast Fourier transform.)
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} $\empty$ \\
+We can describe the probability distribution of the next day given by the current price $x$ as a polynomial $P(x) = 0.5x^2 + 0.2x^4 + 0.3x^{\frac{1}{2}}$. \\
+To calculate the probability that the price of the $n$th day we can use $P(x)^n$ which is the polynomial multiplication of $P(x)$ with itself $n$ times. The exponents of the polynomial $P(x)^n$ will the price multiplier and the coefficient is the probability of that multiplier. \\
+Directly multiplying will lead to $O(n^2)$ time complexity. However, we can use the fast Fourier transform to do the polynomial multiplication in $O(n \log n)$ time. \\
+
 
 \section*{Problem 6}
 There are $n$ stars in a different universe, and all of them are negligibly small in terms of volume. They happen to be in the same straight line, and their locations are $1, 2, \ldots, n$. (Thus the distance between each consecutive pair is $1$.) The star $k$ has mass $m_k > 0$.
