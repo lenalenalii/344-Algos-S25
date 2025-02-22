@@ -32,8 +32,9 @@ Given a directed graph $G = (V, E)$, we want to count the number of walks of len
 
 \paragraph{\textcolor{brown}{Solution.}}
 \begin{enumerate}
-    \item Here is my solution.
-    \item 
+    \item We need to prove that $B_{uv}$ is the number of walks of length k from u to v. Base case: for k = 1, B = A. By definition, $A_{uv}$ = 1 if there is an edge from u to v, which is the number of walks of length 1 from u to v. Inductive hypothesis: assume that for some $k \ge 1$, $(A^k)_{uv}$ is the number of walks of length k from u to v. Inductive step: to show $A^{k+1}$ is the number of walks of length k from u to v, using matrix multiplication, $(A^{k+1})_{uv} = \sum_{w\in v}(A^k)_{uw} \cdot A_{wv}$, where $(A^k)_{uw}$ is the number of walks of length k from u to w and $A_{wv}$ is 1 is there is a direct edge from w to v. Summing over all intermediate vertices w, this gives the total number of walks of length k + 1 from u to v. 
+    \item Initialize B as identity matrix. Using exponentiation by squaring: $\\$ while $k > 0$: $\\$ if k is odd, multiply B = $(B \cdot A)$ mod $p$ $\\$ update A = $(A \cdot A)$ mod $p$ $\\$ divide k by 2 $\\$ return $B_{uv}$ mod $p$ $\\$ Each matrix multiplication takes $O(n^{2.372})$ time and the number of multiplications by exponentiation by squaring is $O(logk)$. 
+    
 \end{enumerate}
 
 
