@@ -15,8 +15,14 @@ Here is my solution.
 \section*{Problem 2}
 We are given two number sequences $(a_1, a_2, \ldots, a_n)$ and $(b_1, b_2, \ldots, b_n)$. Among their common subsequences (not necessarily consecutive), find one with the maximum sum. Give an $O(n^2)$-time DP algorithm for this problem.
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} \: \\
+To solve this problem, we can use dynamic programming. We will create a 2D array $dp$ where $dp[i][j]$ represents the maximum sum of common subsequences between the first $i$ elements of sequence $a$ and the first $j$ elements of sequence $b$. We can initialize the array with all zeros and to fill it up, then iterate through each element of the two sequences and update the $dp$ array based on the following conditions:
+\begin{itemize}
+    \item If $a_i = b_j$, then we can add the value of $a_i$ (or $b_j$) to the maximum sum of common subsequences of the previous elements, i.e., $dp[i][j] = dp[i-1][j-1] + a[i]$.
+    \item If $a_i \neq b_j$, then we take the maximum of the previous sums, i.e., $dp[i][j] = \max(dp[i-1][j], dp[i][j-1])$.
+\end{itemize}
+The final answer will be stored in $dp[n][n]$.
+The time complexity of this algorithm is $O(n^2)$ because we are iterating through each element of the two sequences and updating the $dp$ array in constant time.
 
 
 \section*{Problem 3}

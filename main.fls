@@ -200,6 +200,10 @@ INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\tex\latex\libertine\ts1linuxlibertinet-tlf.fd
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ts1.tfm
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-ot1.vf
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1--base.tfm
 INPUT C:\Users\alexl\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
@@ -215,6 +219,9 @@ INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\Lin
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-ot1--base.tfm
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-ot1.vf
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1--base.tfm
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-ts1.vf
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ts1--base.tfm
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\libertine\lbtn_naooyc.enc
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-ot1.tfm
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineTI-tlf-ot1.vf
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-ot1--base.tfm
