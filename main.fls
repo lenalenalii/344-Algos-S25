@@ -215,6 +215,10 @@ INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\Lin
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-ot1--base.tfm
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-ot1.vf
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1--base.tfm
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-ot1.tfm
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineTI-tlf-ot1.vf
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-ot1--base.tfm
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\libertine\lbtn_kijugd.enc
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
@@ -222,6 +226,8 @@ INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineT.pfb
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTB.pfb
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTB.pfb
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTI.pfb
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTI.pfb
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
@@ -232,3 +238,5 @@ INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\alexl\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb

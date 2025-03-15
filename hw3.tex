@@ -26,8 +26,26 @@ We want to know the answer to the following question. What is the minimum number
 
 Give a DP algorithm for this problem, and write down its running time.
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} \: \\
+We first need to build the function $f(a, b)$ which gives us the minimum number of drops needed to determine the threshold $t$ given $a$ eggs and $b$ floors. 
+
+Consider that we drop the egg from some floor $x$, $1<x<b$. We then have two cases: 
+\begin{enumerate}
+    \item The egg breaks, in which case we have one less egg to work with but know that the threshold $t$ is below $x$
+    \item The egg survives, in which case we have the same number of eggs and know that the threshold $t$ is above $x$
+\end{enumerate} 
+Case 1 tells us that we must then search for $f(a-1, x-1)$, as we know floor $x$ is above the threshold. Case 2 tells us that we must search for $f(a, b-x)$ since floor $x$ is below the threshold, so there are $b-x$ floors remaining above floor $x$ to test.
+\\ \\ Since we must always be able to deduce the threshold $t$ in $f(a, b)$ drops, we need to account for whichever case between 1 and 2 that actually gives us the greatest number of remaining tests we must conduct, so we want: 
+\begin{gather*}
+    \max\{f(a-1, x-1), f(a, b-x)\}
+\end{gather*}
+We want to choose $x$ to \textit{minimize} the value of $f(a, b)$, so therefore we have: 
+\begin{gather*}
+    f(a,b) = 1 + \underset{x \in [1, b]}{\min}\{\max\{f(a-1, x-1), f(a, b-x)\}\}
+\end{gather*}
+Here, we need to add 1 no matter what since when we drop the egg at floor $x$, we add one drop. 
+\\ \\ Now that we have a formula for $f(a, b)$, we must consider how to implement it into an algorithm. Considering that we likely need to store $f(a, b)$ for each value of $a$ and $b$ possible, we initialize a $n+1 \times m+1$ matrix, adding 1 to each dimension to account for having 0 eggs and/or 0 floors. We note that $f(1, b)=b-1$ as given in the problem, base cases$f(a, 0)=0$ and $f(a, 1)=1$ for when we have 0 floors and 1 floor left, and edge case $f(0, b)=0$ for when we have 0 eggs left. This is chosen deliberately to be 0 since we don't want to end up with 0 eggs left when there are multiple floors left, since that means we are not able to determine $t$. Setting $f(0, b)=0$ ensures that the $\max\{...\}$ portion of the formula will always avoid said scenario unless there are also 0 floors left, in which case we have 0 tests left to run anyway.
+\\ \\ We can now construct the full matrix describing the problem by looping over every set of indices $ij$ of the matrix, then looping over all possible values of $x$ for each $ij$, calculating the optimal $x$, and storing the value of $f(a,b)$. Looping over all elements of the matrix is $O(nm)$, and since $x$ can range up to $m$, calculating the optimal $x$ is worst-case $O(m)$, giving us an overall worst-case runtime of $O(nm^2)$
 
 
 \section*{Problem 4}
