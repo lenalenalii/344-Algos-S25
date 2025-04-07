@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1743986273.98003 "c:/Users/ivana/Documents/344-Algos-S25/main.tex" "main.pdf" "main" 1743986275.18352 0
+["pdflatex"] 1743989979.7657 "c:/Users/ivana/Documents/344-Algos-S25/main.tex" "main.pdf" "main" 1743989981.08345 0
   "C:/Users/ivana/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1738813073 132209 0fb36200973000933e455270a86542c1 ""
   "C:/Users/ivana/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1738807624 12017794 ea8a956d5fbcc388cdf5021efa220136 ""
   "C:/Users/ivana/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc" 1497089888 2835 bfce207f80837ef8737b6a788d8bc760 ""
@@ -108,9 +108,9 @@
   "C:/Users/ivana/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/ivana/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "c:/Users/ivana/Documents/344-Algos-S25/main.tex" 1743645161 824 a3a454084aeb0c7a1d7af1d2afc366df ""
-  "hw4.tex" 1743986273 4977 55a4741bc3aca45f674bbbc7db1ab7e3 ""
-  "main.aux" 1743986274 1013 0bd1cabd2350a04799f319f623f68f36 "pdflatex"
-  "main.out" 1743986274 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "hw4.tex" 1743989979 6780 a1a4dee3584722be33413ceece69c31b ""
+  "main.aux" 1743989980 1013 0bd1cabd2350a04799f319f623f68f36 "pdflatex"
+  "main.out" 1743989980 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1743645161 824 a3a454084aeb0c7a1d7af1d2afc366df ""
   (generated)
   "main.aux"
