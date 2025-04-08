@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1744043033.90665 "c:/Users/prana/OneDrive/Desktop/ALGO/344-Algos-S25/main.tex" "main.pdf" "main" 1744043036.20174 0
+["pdflatex"] 1744078031.22469 "c:/Users/prana/OneDrive/Desktop/ALGO/344-Algos-S25/main.tex" "main.pdf" "main" 1744078032.54127 0
   "c:/Users/prana/OneDrive/Desktop/ALGO/344-Algos-S25/main.tex" 1744036969 824 a3a454084aeb0c7a1d7af1d2afc366df ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc" 1705506466 2835 bfce207f80837ef8737b6a788d8bc760 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc" 1705506466 3357 5261ce65ba03aef9faf6135657b9abb6 ""
@@ -113,9 +113,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1705509774 5035139 e8cdab388a5f122f6094769190400852 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1705510268 8218970 09154cb4e9293ce11fe281527b453358 ""
   "c:/texlive/2023/texmf.cnf" 1705509744 713 e69b156964470283e0530f5060668171 ""
-  "hw4.tex" 1744043032 9846 c4de8337ede7625bb9c1d8b480ac1f9b ""
-  "main.aux" 1744043035 1013 516b83af3c3e10486a97c2a1380e6a3d "pdflatex"
-  "main.out" 1744043035 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "hw4.tex" 1744078030 13666 d475ad5c26cfe7ae944cc910b71bb3cc ""
+  "main.aux" 1744078032 1013 105db3ae03044ee7d26ab3c0e758c774 "pdflatex"
+  "main.out" 1744078032 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1744036969 824 a3a454084aeb0c7a1d7af1d2afc366df ""
   (generated)
   "main.aux"

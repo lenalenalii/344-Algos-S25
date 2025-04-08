@@ -14,7 +14,7 @@ We have $n$ boxes. The box $i$ has weight $w_i$ and weight limit $\ell_i$. A box
 What is the tallest tower we can build by stacking a subset of boxes on top of each other? We can freely choose the order. Give a greedy algorithm and formally prove its correctness using the exchange argument.
 
 \paragraph{\textcolor{brown}{Solution.}}
-We have $n$ boxes. The $i$-th box has weight $w_i$ and weight limit $\ell_i$. A box will break if the sum of weights above it exceeds its weight limit. Each box has the same size of $1 \times 1 \times 1$. The goal is to determine the tallest tower we can build by stacking a subset of boxes on top of each other, such that no box breaks. We can freely choose the order in which the boxes are stacked.\\
+We have $n$ boxes. The $i$-th box has weight $w_i$ and weight limit $\ell_i$. A box will break if the sum of weights above it exceeds its weight limit. Each box has the same size of $1 \times 1 \times 1$. The goal is to determine the tallest tower we can build by stacking a subset of boxes on top of each other, such that no box breaks. We can freely choose the order in which the boxes are stacked. Not that this problem is quite similar to the interval scheduling problem.\\
 To solve this problem, we use a greedy algorithm based on sorting boxes by the sum of their weight limit and weight $(\ell_i + w_i)$ in non-increasing order. The algorithm proceeds as follows: \begin{enumerate} \item \textbf{Sort all boxes} in non-increasing order of $(\ell_i + w_i)$. \item \textbf{Process boxes in reverse order} (from last to first in the sorted list): \begin{itemize} \item Maintain a cumulative weight counter initialized to $0$. \item For each box, if its weight limit $\ell_i$ is greater than or equal to the cumulative weight, include it in the tower and add its weight $w_i$ to the cumulative counter. \end{itemize} \end{enumerate} The total number of boxes included in the tower is the height of the tallest possible tower. \\
 We prove the correctness of the greedy algorithm using an exchange argument. Assume an optimal solution $O$ exists that differs from the greedy solution $G$. If there are two adjacent boxes $i$ and $j$ in $O$, where $i$ is below $j$, and $(\ell_i + w_i) < (\ell_j + w_j)$, swapping them preserves validity: \begin{itemize} \item In $O$, $\ell_i \geq w_j + S$ and $\ell_j \geq S$, where $S$ is the cumulative weight above box $j$. \item After swapping, $\ell_j \geq w_i + S$ and $\ell_i \geq S$. Since $(\ell_i + w_i) < (\ell_j + w_j)$, it follows that $\ell_j - w_i > \ell_i - w_j \geq S$, ensuring validity. \end{itemize} By iteratively swapping such pairs, $O$ can be transformed into $G$ without reducing the height of the tower. This proves that $G$ is optimal.
 
@@ -33,7 +33,7 @@ The algorithm to determine whether the minimum spanning tree (MST) of a weighted
         \item For each edge \( e \in T \), assign a new weight \( (w_e, 0) \).
         \item For each edge \( e \notin T \), assign a new weight \( (w_e, 1) \).
     \end{itemize}
-    \item Compute a second MST \( T' \) using Kruskal's algorithm with \textbf{lexicographic order}:
+    \item Compute a second MST \( T' \) using Kruskal's algorithm with lexicographic ordering on the modified weights.
     \begin{itemize}
         \item Compare edges first by original weight \( w_e \), then by the second component (0 or 1).
         \item This prioritizes edges in \( T \) when weights are equal.
@@ -45,7 +45,14 @@ The algorithm to determine whether the minimum spanning tree (MST) of a weighted
     \end{itemize}
 \end{enumerate}
 
-\textbf{Time Complexity:} \( O(m \log m) \), dominated by sorting edges twice in Kruskal's algorithm.
+\textbf{Time Complexity:} \( O(m \log m) \), where \( m \) is the number of edges. The algorithm involves sorting the edges, which takes \( O(m \log m) \) time. The Kruskal's algorithm runs in \( O(m \log m) \) time as well.\\
+
+We can prove the correctness of the algorithm as follows:
+\begin{itemize}
+    \item The modified weights ensure that edges in the original MST \( T \) are prioritized over those not in \( T \) when they have the same weight.
+    \item If \( T' \) is different from \( T \) but has the same total weight, it means that there exists at least one edge in \( T' \) that is not in \( T \), indicating that the MST is not unique.
+    \item If \( T' = T \), then the MST is unique.
+\end{itemize}
 
 
 \section*{Problem 4}
@@ -65,5 +72,55 @@ The proposed algorithm combines Boruvka's algorithm with Prim's algorithm. Run B
 We have an undirected graph $G = (V, E)$. Each edge has a positive length, and there is at most one edge between each pair of vertices. Find the length of the shortest simple cycle in $G$. Your algorithm should run in $O(n^3)$ time, where $n = |V|$. [Hint: You can modify the Floyd--Warshall algorithm. Recall that $f(k, u, v)$ is the length of the shortest path from $u$ to $v$ using vertices with indices of at most $k$. Consider a cycle where $k$ is the largest index among its vertices and $u$ and $v$ are the two neighbors of $k$ in the cycle.]
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+Every simple cycle in the graph has a highest-indexed vertex \( k \). The cycle can be decomposed into:
+\begin{itemize}
+    \item Two edges: \( (u, k) \) and \( (k, v) \), where \( u \) and \( v \) are neighbors of \( k \).
+    \item A path from \( u \) to \( v \) that uses only vertices with indices less than \( k \).
+\end{itemize}
+The algorithm explicitly checks all such cycles by iterating over all possible values of \( k \), and for each \( k \), it considers all pairs of neighbors \( u, v \) of \( k \). The shortest path from \( u \) to \( v \), which avoids using vertex \( k \), is stored in the distance matrix \( D[u][v] \). This allows the algorithm to compute the length of the cycle efficiently.
 
+\textbf{Completeness:} The algorithm considers all possible simple cycles in the graph because:
+\begin{itemize}
+    \item Every simple cycle must have a highest-indexed vertex, say \( k \).
+    \item For each such vertex \( k \), the algorithm examines all pairs of neighbors \( u, v \) of \( k \).
+    \item The algorithm computes the length of the cycle formed by combining:
+    \begin{itemize}
+        \item The shortest path from \( u \) to \( v \) that uses only vertices with indices less than \( k \), which is stored in \( D[u][v] \).
+        \item The edges \( (u, k) \) and \( (k, v) \).
+    \end{itemize}
+\end{itemize}
+Thus, no cycle is missed.
+
+\textbf{Optimality:} The algorithm ensures that the shortest simple cycle is found because:
+\begin{itemize}
+    \item At each step, the distance matrix \( D[u][v] \) contains the length of the shortest path from \( u \) to \( v \) that uses only vertices with indices less than or equal to the current value of \( k-1 \). This is guaranteed by the Floyd-Warshall update rule:
+    \[
+    D[i][j] = \min(D[i][j], D[i][k] + D[k][j]).
+    \]
+    This ensures that when considering a cycle involving vertex \( k \), the path from \( u \) to \( v \) is optimal.
+    \item For each pair of neighbors \( u, v \) of \( k \), the algorithm computes the total length of the cycle as:
+    \[
+    D[u][v] + w(u, k) + w(k, v),
+    \]
+    where:
+    \begin{itemize}
+        \item \( D[u][v] \): Shortest path from \( u \) to \( v \), avoiding vertex \( k \),
+        \item \( w(u, k) + w(k, v) \): Weights of edges connecting vertex \( k \).
+    \end{itemize}
+\end{itemize}
+By taking the minimum over all such cycles, the algorithm guarantees that it finds the shortest simple cycle.
+
+\textbf{Complexity:} The time complexity of the algorithm is as follows:
+\begin{itemize}
+    \item The outer loop iterates over all vertices (\( k = 1, 2, ..., n \)).
+    \item For each vertex \( k \), we consider all pairs of neighbors (\( u, v \)) of vertex \( k \). This takes at most \( O(n^2) \).
+    \begin{itemize}
+        \item For each pair, computing the candidate cycle length takes constant time.
+        \item Updating the distance matrix using Floyd-Warshall also takes at most \( O(n^2) \) per iteration.
+    \end{itemize}
+\end{itemize}
+Thus, the total time complexity is:
+\[
+O(n^3),
+\]
+which matches the desired bound.
