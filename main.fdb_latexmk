@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746145172.8512 "c:/Users/alexl/Documents/CS/CS334 Algos/344-Algos-S25/main.tex" "main.pdf" "main" 1746145174.27082 0
+["pdflatex"] 1746146322.34416 "c:/Users/alexl/Documents/CS/CS334 Algos/344-Algos-S25/main.tex" "main.pdf" "main" 1746146323.67582 0
   "C:/Users/alexl/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1738812151 132209 0fb36200973000933e455270a86542c1 ""
   "C:/Users/alexl/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1738810777 24225045 0a9d4368c8d8eef111957d64c087383f ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_kijugd.enc" 1497089888 2822 11e839d2bbb939844844619b2cff7df6 ""
@@ -34,6 +34,7 @@
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
+  "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1247596666 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1247596670 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
@@ -114,9 +115,9 @@
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "c:/Users/alexl/Documents/CS/CS334 Algos/344-Algos-S25/main.tex" 1746145171 822 c54381536f5d4ffccb2d039c7056bcba ""
-  "hw5.tex" 1746145142 2319 f4755534a1e5e517790c31a76d797a4c ""
-  "main.aux" 1746145173 1013 1114f7cffe63af3c952c318dd16b829e "pdflatex"
-  "main.out" 1746145173 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "hw5.tex" 1746146321 3784 e23617b4796f83794abf2bff5fd78786 ""
+  "main.aux" 1746146323 1013 1114f7cffe63af3c952c318dd16b829e "pdflatex"
+  "main.out" 1746146323 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1746145171 822 c54381536f5d4ffccb2d039c7056bcba ""
   (generated)
   "main.aux"
