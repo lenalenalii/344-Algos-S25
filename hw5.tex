@@ -7,7 +7,13 @@ There are $n$ children forming a circle. The $i$-th child currently has $a_i$ ap
 In one move, we can take one apple from a child and give it to an \emph{adjacent} child. What is the minimum number of moves we have to make to make every child have exactly $\bar a$ apples? Model this problem by a flow network with costs, and therefore show that this problem can be solved in polynomial time.
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+Modeling a flow network, each child is a node in the network with nodes 1, 2,...,n. Each node i has a supply (if $a_i > \bar{a}$) or demand (if $a_i < \bar{a}$). Supply $s_i = a_i - \bar{a}$: 
+\begin{itemize} \item If $s_i > 0:$ node i has $s_i$ apples to give away. \item If $s_i < 0:$ node i needs $|s_i|$ apples. \end{itemize} 
+For each pair of adjacent children (i and (i mod n) + 1), created two directed edges:
+\begin{enumerate} \item From i to (i mod n) + 1 \item From (i mod n) + 1 to i \end{enumerate}
+Each edge has:
+\begin{itemize} \item Capacity: infinite (or at least large enough for all apples) \item Cost: 1 per apple (because one move = moving one apple to an adjacent node) \end{itemize} 
+Sending flow along an edge represents moving apples from one child to an adjacent child. The cost of the flow is the total number of moves. This is a minimum cost flow problem, which can be solved in polynomial time using algorithms like the Successive Shortest Path algorithm or the Cycle-Canceling algorithm. The minimum cost flow will give us the minimum number of moves needed to balance the apples among the children.
 
 
 \section*{Problem 2}
