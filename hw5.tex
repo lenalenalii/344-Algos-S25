@@ -54,4 +54,16 @@ Here is my solution.
 Prove that the following problem is $\mathtt{NP}$-complete: Given a weighted directed graph with $n$ vertices and $m$ edges, decide whether the graph has a simple cycle with sum of weights equal to $344$. The weight of each edge must be an integer, but can be positive, negative, or zero.
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+To prove a problem is NP-complete, we first need to show the problem is in NP. To do this, we can check that given a cycle as a certificate, we can check if it's simple and that the sum of edge weights along the cycle is exactly 344. Both of these can be done in polynomial time, thus the problem is in NP. 
+\\ \\ Next, to show that the problem is NP-hard, we need to reduce a known NP-complete problem to it. The Subset Sum problem says that: 
+\begin{itemize} \item given integers $a_1, a_2, ..., a_n$ and integer K does there exist a subset whose sum is exactly K? \end{itemize}
+We can reduce the Subset Sum problem (which is known NP-complete) to our cycle problem. We start by building the graph:
+\begin{enumerate} \item Create n + 1 vertices $v_0, v_1, v_2, ..., v_n$. \item For each i = 1, ...,n: \begin{itemize} \item Add a directed edge from $v_{i-1}$ to $v_i$ with weight 0. \item Add a directed edge from $v_{i-1}$ to $v_i$ with weight $a_i$. \end{itemize} \item Add a directed edge from $v_n$ to $v_0$ with weight 0. \end{enumerate}
+Next is the cycle correspondence:
+\begin{enumerate} \item Any simple cycle starting at $v_0$, going through to $v_n$, and back to $v_0$ corresponds to a selection of edges. \item At each step i, you choose either: \begin{itemize} \item The 0-weight edge (meaning don't include $a_i$), or \item The $a_i$-weight edge (meaning include $a_i$ in the sum). \end{itemize} \end{enumerate}
+Thus, the total weight of the cycle is the sum of the selected $a_i$ values.
+\\ The next step is to set the target weight:
+\begin{enumerate} \item Set the target weight to K. \item The cycle has weight K $\iff$ there is a subset of the $a_i$ summing to K. \end{enumerate}
+Finally, we map to 344:
+\begin{itemize} \item Since the cycle problem has a fixed target of 344, we can transform any instance of Subset Sum to an instance of our problem by shifting the target appropriately (e.g., for any Subset Sum instance, ask whether there is a cycle of weight $K' = 344$ by adjusting edge weights by $(344 - K)$ if needed). \end{itemize}
+Therefore, the problem is NP-complete.
