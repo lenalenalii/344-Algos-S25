@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746325108.76243 "c:/Users/alexl/Documents/CS/CS334 Algos/344-Algos-S25/main.tex" "main.pdf" "main" 1746325110.13737 0
+["pdflatex"] 1746325233.1893 "c:/Users/alexl/Documents/CS/CS334 Algos/344-Algos-S25/main.tex" "main.pdf" "main" 1746325234.37149 0
   "C:/Users/alexl/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1738812151 132209 0fb36200973000933e455270a86542c1 ""
   "C:/Users/alexl/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1738810777 24225045 0a9d4368c8d8eef111957d64c087383f ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_kijugd.enc" 1497089888 2822 11e839d2bbb939844844619b2cff7df6 ""
@@ -121,9 +121,9 @@
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/alexl/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "c:/Users/alexl/Documents/CS/CS334 Algos/344-Algos-S25/main.tex" 1746145171 822 c54381536f5d4ffccb2d039c7056bcba ""
-  "hw5.tex" 1746325107 8025 1b4e0392026b1aa2ccbfa846569f4532 ""
-  "main.aux" 1746325109 1013 7d133593265f4d24554889bfefc6177b "pdflatex"
-  "main.out" 1746325109 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "hw5.tex" 1746325232 9209 9dec58c02d58254e235a35e321737bcb ""
+  "main.aux" 1746325234 1013 7b23820680e1b55149b83826cd128be3 "pdflatex"
+  "main.out" 1746325234 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1746145171 822 c54381536f5d4ffccb2d039c7056bcba ""
   (generated)
   "main.aux"

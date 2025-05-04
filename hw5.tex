@@ -39,8 +39,20 @@ Explicitly construct a bijection between each of the following pairs of sets and
 \section*{Problem 3}
 Review the halting problem, and prove that the following problem is also undecidable: Given a Turing machine, decide whether it always correctly decides the set cover problem. (Note that the given Turing machine may not halt on a valid input, in which case it does not correctly decide the set cover problem.)
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} \: \\
+We reduce from the halting problem, which is known to be undecidable.\\
+Assume for contradiction: Suppose we have a decider \( D \) that takes as input a Turing machine \( M \) and determines whether \( M \) always correctly decides the set cover problem.We will construct a Turing machine \( M' \) based on any input \( M \) and \( w \), such that:\( M' \) behaves like this:\\
+On input \( x \):\\
+If \( x \) is a valid instance of the set cover problem, then: Simulate \( M(w) \).\\
+If \( M(w) \) halts, solve the set cover problem correctly on input \( x \).\\
+If \( M(w) \) does not halt, loop forever.\\
+Thus, \( M' \) behaves as follows:\\
+If \( M(w) \) halts, then \( M' \) always halts and gives the correct answer on all inputs to the set cover problem.\\
+If \( M(w) \) does not halt, then \( M' \) loops forever on all set cover inputs, hence does not "correctly decide" the problem.\\
+Use the assumed decider \( D \) on \( M' \):\\
+If \( D(M') \) says "yes", then \( M(w) \) halts.\\
+If \( D(M') \) says "no", then \( M(w) \) does not halt.\\
+Therefore, using \( D \), we could decide whether \( M(w) \) halts — which contradicts the undecidability of the halting problem.`
 
 
 \section*{Problem 4}
