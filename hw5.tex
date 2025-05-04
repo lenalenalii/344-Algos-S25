@@ -58,8 +58,20 @@ Therefore, using \( D \), we could decide whether \( M(w) \) halts — which con
 \section*{Problem 4}
 Prove that the following problem is $\mathtt{NP}$-complete: Given $n$ positive integers that sum to $2W$, decide whether we can partition the integers into two parts with equal sum ($W$ each).
 
-\paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+\paragraph{\textcolor{brown}{Solution.}} \: \\
+To prove a problem is NP-complete, we first need to show that it is in NP. We can easily check if a partition is a solution by adding all integers in each partition together and checking if the sum for the first partition equals the sum for the second partition. This certifier is clearly polynomial time (it would be $O(n)$), and thus our problem is in NP.
+\\ \\ 
+We now have to show that our problem is NP-hard. We can do this by reducing a problem we know is NP-complete (and thus NP-hard) to this problem. Here, we will reduce the subset sum Problem, which we know is NP-complete, to this problem.
+\\ \\
+The subset sum problem states that we have a set of positive integers $A=\{a_1, a_2, ... a_n\}$ and we must decide whether there is a subset that sums to a number $S$. We must now find a polynomial-time algorithm to convert an instance of the subset sum problem into this problem. 
+\\ \\
+Take an instance of the subset sum problem where we have a set $A$ and target sum $S$, and the sum of the integers in the set $A$ is $A_{tot}$. We construct a new set $A'=\{a_1,...a_n, 2S-A_{tot}\}$, with sum $A'_{tot}=A_{tot}+2S-A_{tot}=2S$. 
+\\ \\
+Now if there is a subset $B \subseteq A$ which sums to $S$, then the subset $A' \setminus B$ would have the sum $2S - S = S$, and we therefore have two subsets of equal sum, which is our problem. Therefore any instance of the subset sum problem has an equivalent instance in our problem. 
+\\ \\ 
+Similarly, for an instance of our problem, if we can partition $A'$ into two subsets with equal sum $S$, then one of the subsets has to have the element $2S-A_{tot}$, which means the rest of the subset sums to $S - 2S + A_{tot} = A_{tot} - S$. Then since all the elements of $A'$ are in $A$ except this $2S-A{tot}$ element, which is already in the first subset, and the set $A$ summed to $A_{tot}$, the other subset must sum to $A_{tot}-(A_{tot}-S)=S$. Therefore our instance is equivalent to an instance of the subset sum problem.
+\\ \\
+Our reduction is clearly polynomial time because it is simply adding another element. We have therefore shown that this problem is in NP and can be reduced to from an NP-hard problem in polynomial time, so it is NP-complete.
 
 
 \section*{Problem 5}
