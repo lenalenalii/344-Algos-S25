@@ -11,7 +11,12 @@ We can compute the depth of all the vertices in $O(n)$ time using DFS or BFS. In
 Explain how to compute all of $f(v, k)$ in $O(n \log h)$ time and how to use this information (along with the depths of all vertices) to answer any query in $O(\log h)$ time.
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+To compute all of $f(v, k)$ in $O(n \log h)$ time, we start by defining:
+\begin{itemize} \item $f(v, k)$: The $2^k$-th ancestor of $v$. \begin{itemize} \item $f(v,0)$ = parent of v (or v itself if you define 0-th ancestor as self) \item $f(v,k)$ = $f(f(v,k-1),k-1)$ for $k > 0$ \end{itemize} \end{itemize} 
+Now for the depth and parent computation: \begin{itemize} \item Do a DFS or BFS from the root \item Record parent[v] for each vertex v \item Record depth[v] \item This takes $O(n)$ time \end{itemize}
+Next is the DP table for $f(v,k)$: \begin{itemize} \item For each v, set $f(v,0)$ = parent[v] \item For k = 1 to $\lfloor \log_2 h \rfloor$: \begin{itemize} \item For each vertex v: $f(v,k) = f(f(v,k-1),k-1)$ \item Each level doubles the distance moved up the tree \end{itemize} \item There are $O(logh)$ levels (since max k is $\lfloor \log_2 h \rfloor$) \item For each level, you process all n vertices \item Total time: $O(nlogh)$ \end{itemize}  
+To use this to answer queries in $O(logh)$ time given two vertices u and v: \begin{enumerate} \item Equalize depths: \begin{itemize} \item If depth[u] $<$ depth[v], swap u and v \item For k descending from $\lfloor \log_2 h \rfloor$ to $0$:  \begin{itemize} \item If depth[u] - $2^k \ge$ depth[v], set u = $f(u,k)$ \end{itemize} \item Now u and v are at the same depth \end{itemize} \item Binary lifting to find LCA: \begin{itemize} \item If u = v, return u (they are the same node) \item For k descending from $\lfloor \log_2 h \rfloor$ to $0$: \begin{itemize} \item If $f(u,k) \neq f(v,k)$, set u = $f(u,k), v = f(v,k)$ \end{itemize} \item Now u and v are children of the LCA \item Return parent[u] (or $f(u,0))$ \end{itemize} \end{enumerate}  
+Each of the above steps loops over k = $O(logh)$, so query time is $O(logh)$.
 
 
 \section*{Problem 2}
@@ -23,7 +28,10 @@ We have an ordered sequence of $n$ operations and a robot that performs these op
 We are given a parameter $k$, and we can choose to modify at most $k$ operations in the sequence (\textsc{Forward} to \textsc{Turn}, or \textsc{Turn} to \textsc{Forward}). What is the farthest place (farthest in terms of the distance to the starting point) that the robot can arrive at after performing the entire modified operation sequence? Give a polynomial-time algorithm to solve this problem.
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+Let $dp[i][j][d]$ = maximum position robot can reach after processing the first i operations, using j changes, and facing direction d. \begin{itemize} \item i ranges from 0 to n \item j ranges from o to k \item d is 0 for facing right and 1 for facing left \end{itemize}
+Initialize: \begin{itemize} \item $dp[0][0][0] = 0$ (starting at position 0, facing right, 0 changes) \item All other $dp[0][*][*]$ = $-\infty$ (invalid states) \end{itemize}
+At each operation i, for each number of changes $j \leq k$, and for each direction d: \begin{enumerate} \item Don't modify the current operation \begin{itemize} \item If it's an F, move one step in direction d \item If it's a T, flip direction \end{itemize} \item Modify the current operation \begin{itemize} \item This increases change count $j \rightarrow j+1$ \item Change F to T or T to F and apply the corresponding effect \end{itemize} \end{enumerate} Update $dp[i+1][j][new\_dir]$ and $dp[i+1][j+1][new\_dir]$ for each possible case.
+\\ \\ The furthest distance is $\max_{\substack{j \leq k \\ d \in \{0, 1\}}} \left| \mathrm{dp}[n][j][d] \right|$. The total DP table size is $O(nk)$ and each state takes constant time to compute.
 
 
 \section*{Problem 3}
@@ -37,7 +45,10 @@ Consider the following linear-time algorithm that finds a longest simple path on
 Prove the correctness of this algorithm.
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+We define: \begin{itemize} \item diameter(T) as the longest simple path in the tree T \item v as the node farthest from the arbitrary node u \item w as the node farthest from v \item P = path(v,w) as the path returned by the algorithm \end{itemize} We want to show length(P) = diameter(T)
+\\ \\ Lemmas: \begin{enumerate} \item The longest path in a tree is between two leaves. \begin{itemize} \item Any simple path in a tree can be extended only by moving toward a leaf. \item Therefore, the diameter lies between two leaf nodes. \end{itemize} \item The node v, being farthest from u, must be one end of the diameter. \begin{itemize} \item Let x—y be the endpoints of the true diameter. \item Suppose v is not one of them. \item Then, the path from x to y must pass through u, which contradicts v being farther from u than both x and y (since paths in trees are unique and acyclic). \item Therefore, the node v is an endpoint of the diameter. \end{itemize} \item Doing BFS/DFS from v finds the other endpoint w of the diameter. \begin{itemize} \item Since v is one end of the longest path, the farthest node from v must be the other end w. \item BFS/DFS guarantees that it finds the farthest node in terms of number of edges (or distance if weighted), so it finds the other end of the diameter. \end{itemize} \end{enumerate}
+In conclusion, the path from v to w is: \begin{itemize} \item A simple path (since the tree has no cycles) \item Of maximum possible length (since it connects two endpoints of the diameter) \item Therefore, it must be the diameter of the tree. \end{itemize}
+Thus, the algorithm is correct.
 
 
 \section*{Problem 4}
@@ -46,12 +57,17 @@ Give a polynomial-time algorithm to find all strongly connected components in a 
 In fact, this problem can be solved in $O(|V| + |E|)$ time. As a voluntary challenge, look up and understand such an algorithm.
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+We can use Kosaraju's algorithm to find all SCCs in a directed graph G = (V,E): 
+\begin{enumerate} \item DFS on G and record finishing order \begin{itemize} \item Run DFS on G. \item When each node finishes (all its descendants are explored), push it to a stack (or record post-order). \item This gives you an ordering where sink components finish first. \end{itemize} \item Transpose the graph $G^{T}$ \begin{itemize} \item Reverse all edges: For each edge $(u,v) \in E$, add (v,u) to $G^{T}$. \item Time complexity for this step is $O(|E|)$. \end{itemize} \item DFS on $G^{T}$ in reverse finishing order \begin{itemize} \item Pop vertices from the stack. \item For each unvisited vertex, perform DFS and mark all reachable vertices. They form one SCC. \item Continue until all vertices are visited. \end{itemize} \end{enumerate}
+\begin{itemize} \item Each DFS takes $O(|V|+|E|)$ time. \item Reversing the graph also takes $O(|E|)$ time. \item So the total is $O(|V|+|E|) + O(|E|) + O(|V|+|E|) = O(|V|+|E|)$ time. \end{itemize}
 
 
 \section*{Problem 5}
 Give a polynomial-time algorithm to solve the $2$SAT problem. The $2$SAT problem is similar to the $3$SAT problem except that every clause of it has exactly $2$ literals. (Hint: The $2$SAT problem is related to strongly connected components.)
 
 \paragraph{\textcolor{brown}{Solution.}}
-Here is my solution.
+Unlike 3SAT, which is NP-complete, 2SAT can be solved in polynomial time. We can do so using implication graphs and SCCs.
+\\ \\ For each clause $(a \lor b)$, interpret it as two implications: \begin{itemize} \item $(\neg a \implies b)$ \item $(\neg b \implies a)$ \end{itemize} This forms a directed graph with 2n vertices (one for each literal and its negation). Then, we can use Kosaraju’s algorithm to find SCCs in the implication graph, which takes $O(n+m)$ time. 
+\\ \\ Then, for every variable x, check if x and $\neg x$ are in the same SCC $\implies$ unsatisfiable. This is because it implies both $x \implies \neg x$ and $\neg x \implies x$, which forces both to be true simultaneously, which is a contradiction. 
+\\ \\ For the time complexity: \begin{itemize} \item Building implication graph takes $O(n+m)$ \item SCC decompositiontakes $O(n+m)$ \item And checking each variable takes $O(n)$ \end{itemize} Overall, it takes $O(n+m)$ time.
 
